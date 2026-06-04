@@ -1,0 +1,1108 @@
+<!DOCTYPE html><html><head>
+    <meta content="" charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/Content/images/image1/emblem.ico" type="image/x-icon">
+
+    <link type="text/css" rel="stylesheet" href="/Content/libs/highslide/highslide.css">
+    <link type="text/css" rel="stylesheet" href="/Content/libs/Pcss/owl.carousel.css">
+    <link type="text/css" rel="stylesheet" href="/Content/libs/Pcss/invincible_style.css">
+    <link type="text/css" rel="stylesheet" href="/Content/libs/Pcss/jquery-ui.css">
+
+    
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <!-- Bootstrap core CSS -->
+
+
+    <link type="text/css" rel="stylesheet" href="/Content/css/custome.css">
+    <link type="text/css" rel="stylesheet" href="/Content/css/custome1.css">
+    <link type="text/css" rel="stylesheet" href="/Content/libs/font-awesome/css/all.css">
+    <link type="text/css" rel="stylesheet" href="/Content/css/responsive.css">
+    <link type="text/css" rel="stylesheet" href="/Content/css/easy-responsive-tabs.css">
+    <!--<link href="~/Content/css/talkify-common.css" rel="stylesheet" />
+    <link href="~/Content/css/talkify-playlist.css" rel="stylesheet" />
+    <script src="~/Content/js/talkify.min.js"></script>
+
+    <script type="text/javascript">
+        function myFunction() {
+            document.getElementById("button1").disabled = true;
+            var x = document.getElementById("myAudio");
+            x.play();
+            talkify.config.remoteService.host = 'https://tdil-dc.in/ttsapi';
+            talkify.config.remoteService.speechBaseUrl = '/indictts/';
+            talkify.config.remoteService.apiKey = config.apiKey;
+            talkify.config.ui.audioControls = {
+                enabled: true, //<-- Disable to get the browser built in audio controls
+                container: document.getElementById("player-and-voices")
+            };
+
+            var player = new talkify.TtsPlayer()
+                .enableTextHighlighting();
+
+            var playlist = new talkify.playlist()
+                .begin()
+                .usingPlayer(player)
+                .withRootSelector('*')
+                .withTextInteraction()
+                .build()
+                .play();
+        }
+    </script>
+
+    <script>
+        if (window.parent && window.parent.parent) {
+
+            window.parent.parent.postMessage(["resultsFrame", {
+
+                height: document.body.getBoundingClientRect().height,
+
+                slug: "woqw6b6g"
+
+            }], "*")
+
+        }
+
+    </script>-->
+    <!---talkify end-->
+
+    <style type="text/css">
+
+        img.lazy {
+            height: 400px;
+            display: block;
+        }
+    </style>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #menudiv {
+            text-align: center;
+        }
+
+        ul.menu {
+            display: inline-block;
+            list-style-type: none;
+            color: white;
+        }
+
+        li.menuitem {
+            position: relative;
+            display: inline-block;
+            /* padding: 5px 10px; */
+            color: white;
+        }
+
+        ul.submenu {
+            display: none;
+            position: absolute;
+            list-style-type: none;
+        }
+
+        .menuitem:hover > ul.submenu {
+            display: block;
+        }
+    </style>
+    <style type="text/css">
+        a:hover, a:focus {
+            cursor: pointer;
+        }
+
+        header {
+            display: block;
+        }
+    </style>
+
+
+</head>
+<body>
+
+
+    <section class="pa-banner__header">
+        <div class="item pa-item breadcrumbs">
+            <img src="/Content/images/image1/MainBanner.jpg" style="max-height: 410px; object-fit: cover;" alt="Padma Awards">
+            <div class="bpage-title">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2 id="heading" runat="server"></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="pa-header pa-fade " data-spy="affix" data-offset-top="100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="/Content/images/image1/logonew.png" alt="Padma Awards" class="img-responsive logo-img">
+                                <img src="/Content/images/image1/s-logo.png" alt="Padma Awards" class="img-responsive s-logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-8 col-sm-8 col-xs-12">
+                        <nav class="navbar navbar-expand-lg bg-transparent pa-navbar">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li id="Home" onclick="SetActiveNav('Home')"><a href="/">Home</a></li>
+                                        <li id="About" onclick="SetActiveNav('About')"><a href="/PadmaAwards/AboutAwards">About</a></li>
+                                        <li class="menuitem" style="color: white" id="BharatRatan">
+                                            <a class="lia">Bharat Ratan Awards</a>
+                                            <ul class="submenu SubMenuSec">
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('BharatRatan')">
+                                                    <a href="/PadmaAwards/selectionguidelinesBharatRatna" style=""><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Notifications</a>
+                                                </li>
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('BharatRatan')">
+                                                    <a href="/PadmaAwards/BharatRatnaawardees"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Awardees</a>
+                                                </li>
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('BharatRatan')">
+                                                    <a href="/PadmaAwards/BharatRatnaCeremony"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Ceremony</a>
+                                                </li>
+                                                
+
+                                            </ul>
+                                        </li>
+                                        <li class="menuitem" style="color: white" id="Awards">
+                                            <a style="width: 74px; height: 20px; " class="lia">Padma Awards</a>
+                                            <ul class="submenu SubMenuSec">
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('Awards')">
+                                                    <a href="/PadmaAwards/selectionguidelines"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Notifications</a>
+                                                </li>
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('Awards')">
+                                                    <a href="/PadmaAwards/padmaawardees"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Awardees</a>
+                                                </li>
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('Awards')">
+                                                    <a href="/PadmaAwards/Gallery"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Ceremony</a>
+                                                </li>
+                                                <li class="subitem subitemSec" onclick="SetActiveNav('Awards')">
+                                                    <a href="/PadmaAwards/SocialMediaUpdates"><i class="fa fa-angle-right" aria-hidden="true"></i> &nbsp;Media</a>
+                                                </li>
+
+                                            </ul>
+                                        </li>
+                                        <li><a style="width: 90px; height: 10px;" href="/padmaawards/dashboard">Dashboard</a></li>
+                                        <li>
+                                            <div style="margin-top: 7px;">
+                                                <button id="button1" onclick="myFunction()" class="border-0  ScreenReader" title="Screen Reader">
+                                                    <i class="fa-solid fa-volume-high"></i>
+                                                </button>
+                                                <audio id="myAudio">
+                                                    <source src="https://tdil-dc.in/ttsapi/Talkify-master/sample.ogg" type="audio/ogg">
+                                                    <source src="https://tdil-dc.in/ttsapi/Talkify-master/sample.mp3" type="audio/mpeg">
+                                                </audio>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="clearfix"></div>
+    </section>
+
+
+
+    <section id="sec" dis="">
+
+        <div style="border-top: 1px solid black; margin-top: 10px; width: 100%;"></div>
+    </section>
+
+
+
+    
+    <div id="body">
+        
+        <section class="content-wrapper main-content clear-fix">
+            
+
+
+<form id="from1" action="/padmaawards/padmaawardees" method="post">
+
+    <div id="Form2" class="filter-select" visible="true" style="text-align: center;">
+        <span style="font-size: x-large">Select Year</span>
+        <select data-val="true" data-val-number="The field DdlId must be a number." data-val-required="The DdlId field is required." id="ddlYear" name="PadmaDTO.DdlId" onchange="submitform()"><option value="1">2026</option>
+<option value="2">2025</option>
+<option value="3">2024</option>
+<option value="4">2023</option>
+<option value="5">2022</option>
+<option value="6">2021</option>
+<option value="7">2020</option>
+<option value="8">2019</option>
+<option value="9">2018</option>
+<option value="10">2017</option>
+<option value="11">2016</option>
+<option value="12">2015</option>
+<option value="13">2014</option>
+<option value="14">2013</option>
+<option value="15">2012</option>
+<option value="16">2011</option>
+<option value="17">2010</option>
+<option value="18">2009</option>
+<option value="19">2008</option>
+<option value="20">2007</option>
+<option value="21">2006</option>
+<option value="22">2005</option>
+<option value="23">2004</option>
+<option value="24">2003</option>
+<option value="25">2002</option>
+<option value="26">2001</option>
+<option value="27">2000</option>
+<option value="28">1999</option>
+<option value="29">1998</option>
+<option value="30">1992</option>
+<option value="31">1991</option>
+<option value="32">1990</option>
+<option value="33">1989</option>
+<option value="34">1988</option>
+<option value="35">1987</option>
+<option value="36">1986</option>
+<option value="37">1985</option>
+<option value="38">1984</option>
+<option value="39">1983</option>
+<option value="40">1982</option>
+<option value="41">1981</option>
+<option value="42">1980</option>
+<option value="43">1979</option>
+<option value="44">1978</option>
+<option value="45">1977</option>
+<option value="46">1976</option>
+<option value="47">1975</option>
+<option value="48">1974</option>
+<option value="49">1973</option>
+<option value="50">1972</option>
+<option value="51">1971</option>
+<option value="52">1970</option>
+<option value="53">1969</option>
+<option value="54">1968</option>
+<option value="55">1967</option>
+<option value="56">1966</option>
+<option value="57">1965</option>
+<option value="58">1964</option>
+<option value="59">1963</option>
+<option value="60">1962</option>
+<option value="61">1961</option>
+<option value="62">1960</option>
+<option value="63">1959</option>
+<option value="64">1958</option>
+<option value="65">1957</option>
+<option value="66">1956</option>
+<option value="67">1955</option>
+<option value="68">1954</option>
+</select>
+<select id="ddllang" name="PadmaDTO.Ddllang" onchange="submitform()"><option value="E">English</option>
+<option value="H">Hindi</option>
+</select>    </div>
+
+    <section class="award-samman" style="margin: 10px">
+        <div class="container" id="section">
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-center">
+                    <div class="row justify-content-center">
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/1.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/2.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/3.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/4.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/5.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/6.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/7.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/8.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/9.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/10.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/11.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/12.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/13.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/14.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/15.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/16.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/17.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/18.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/19.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/20.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/21.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/22.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/23.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/24.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/25.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/26.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/27.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/28.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/29.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/30.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/31.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/32.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/33.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/34.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/35.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/36.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/37.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/38.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/39.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/40.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/41.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/42.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/43.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/44.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/45.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/46.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/47.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/48.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/49.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/50.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/51.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/52.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/53.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/54.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/55.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/56.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/57.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/58.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/59.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/60.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/61.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/62.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/63.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/64.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/65.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/66.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/67.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/68.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/69.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/70.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/71.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/72.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/73.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/74.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/75.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/76.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/77.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/78.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/79.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/80.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/81.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/82.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/83.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/84.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/85.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/86.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/87.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/88.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/89.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/90.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/91.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/92.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/93.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/94.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/95.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/96.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/97.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/98.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/99.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/100.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/101.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/102.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/103.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/104.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/105.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/106.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/107.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/108.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/109.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/110.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/111.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/112.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/113.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/114.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/115.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/116.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/117.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/118.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/119.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/120.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/121.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/122.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/123.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/124.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/125.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/126.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/127.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/128.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/129.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/130.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 samman">
+                                    <a href="#">
+                                            <img src="/Document/images/awardeesticket/2026/131.jpg" class="lazy" alt="padma awardees">
+                                    </a>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</form>
+
+
+        </section>
+    </div>
+
+    <!-- footer -->
+    <div class="pa-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <ul class="pa-social__links">
+                        <li><a rel="noreferrer" href="https://www.facebook.com/Padma-Awards-120536085312800/"><i class="fab fa-facebook-f"></i>Facebook </a></li>
+                        <li><a rel="noreferrer" href="http://twitter.com/padmaawards"><i class="fab fa-twitter"></i>Twitter</a> </li>
+                        <li><a rel="noreferrer" href="https://www.instagram.com/padmaawards"><i class="fab fa-instagram"></i>Instagram</a> </li>
+                        <li>
+                            <a rel="noreferrer" href="https://www.youtube.com/channel/UCLTISaxnARMPX4J9aj0vAcA/videos">
+                                <img src="/Content/images/image1/youtube-24.png">
+                                Youtube
+
+                            </a>
+                        </li>
+                        <li><a href="/padmaawards/ContactUs">Contact Us</a> </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                    <p>
+                        © 2022 Padma Awards Ministry of Home Affairs (Govt. of India). All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /footer -->
+    <script type="text/javascript" src="/Scripts/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="/Content/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/lazyload.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/dynElement.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/owl.carousel.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/jquery-ui.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="/Content/libs/Pjs/widgets.js"></script>
+    <script type="text/javascript" src="/Content/js/MenuActive.js"></script>
+
+
+    
+
+    <script type="text/javascript">
+
+        function submitform() {
+            var selectIndex = $('#ddlYear option:selected').text();
+            var year = $('#ddlYear option:selected').val();
+            $('#from1').submit();
+        }
+
+    </script>
+
+
+    <script>
+        window.addEventListener('beforeunload', function () {
+            window.speechSynthesis.cancel(); // Cancel any ongoing speech synthesis
+        });
+        // Check if SpeechSynthesis is supported by the browser
+        if ('speechSynthesis' in window) {
+
+
+            const button = document.getElementById('button1');
+
+            button.addEventListener('click', (event) => {
+                event.preventDefault()
+                const bodyText = document.body.innerText;
+
+                // Create a SpeechSynthesisUtterance object with all the body text
+                const speech = new SpeechSynthesisUtterance(bodyText);
+
+                // Set optional properties
+                speech.pitch = 1;  // Pitch of the voice
+                speech.rate = 1;   // Speed of speech
+                speech.volume = 1; // Volume of speech (0 to 1)
+
+                // Speak the content
+                window.speechSynthesis.speak(speech);
+            });
+        } else {
+            console.log('Speech synthesis not supported in this browser.');
+        }
+    </script>
+    <script>
+
+        /*ACTIVE  NAVBAR SCRIPT*/
+        const GetNavSession = sessionStorage.getItem("navID")
+        if (GetNavSession == null) {
+            sessionStorage.setItem("navID", "Home")
+        }
+        let SelectedLi = document.getElementById(GetNavSession);
+        SelectedLi?.classList.add("active");
+        const SetActiveNav = (id) => {
+            sessionStorage.removeItem("navID")
+            sessionStorage.setItem("navID", id)
+            const GetNavSessionSec = sessionStorage.getItem("navID")
+
+        }
+
+
+        window.onscroll = function () { myFunction() };
+
+        const TopHeader = document.getElementById('Tophead')
+
+
+        function myFunction() {
+            const PageOffset = window.pageYOffset;
+
+            if (PageOffset > 0) {
+                TopHeader?.classList.remove("affix-top")
+                TopHeader?.classList.add("affix")
+            } else if (PageOffset == 0) {
+                TopHeader?.classList.remove("affix")
+                TopHeader?.classList.add("affix-top")
+            }
+
+        }
+
+    </script>
+
+
+
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: initial;"></iframe></body></html>
