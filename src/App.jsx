@@ -1,12 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
 
-import Home from "./pages/Home";
-import Awardees from "./pages/Awardees";
-import AwardeeDetails from "./pages/AwardeeDetails";
-import Dashboard from "./pages/Dashboard";
-import About from "./pages/About";
+import Home from "./pages/Home.jsx";
+import Awardees from "./pages/Awardees.jsx";
+import AwardeeDetails from "./pages/AwardeeDetails.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
+import About from "./pages/About.jsx";
 
 function App() {
   return (
